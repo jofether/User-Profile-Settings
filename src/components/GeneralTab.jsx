@@ -4,7 +4,8 @@ export default function GeneralTab({ onSave }) {
   return (
     <div className="space-y-8">
       <div className="flex items-center space-x-6 pb-8 border-b border-gray-200">
-        <div className="w-24 h-24 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full flex items-center justify-center text-5xl shadow-lg">
+        {/* [BUG - COLOR & CONTRAST] Avatar background same color as text (invisible) | [FIX] Keep colorful gradient */}
+        <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg text-white">
           👨‍💻
         </div>
         <div>
@@ -36,10 +37,11 @@ export default function GeneralTab({ onSave }) {
 
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+          {/* [BUG - COLOR & CONTRAST] Light gray text on light background - unreadable | [FIX] Change text-gray-400 to text-gray-900 */}
           <input 
             type="email" 
             defaultValue="jofether@example.com"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" 
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition text-gray-400" 
           />
         </div>
 

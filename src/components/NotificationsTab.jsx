@@ -33,7 +33,8 @@ export default function NotificationsTab({ onSave }) {
 
       <div className="border-t border-gray-200 pt-6">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Push Notifications</h3>
-        <div className="flex items-center justify-between bg-purple-50 p-4 rounded-lg border border-purple-200">
+        {/* [BUG - LAYERS] Absolute positioning without proper parent context | [FIX] Remove absolute or fix positioning context */}
+        <div className="flex items-center justify-between bg-purple-50 p-4 rounded-lg border border-purple-200 absolute">
           <div>
             <p className="font-medium text-gray-700">Enable push notifications</p>
             <p className="text-sm text-gray-600">Get notified on your devices in real-time</p>

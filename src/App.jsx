@@ -46,7 +46,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 font-sans">
-      <div className="max-w-6xl mx-auto">
+      {/* [BUG - LAYERS] Wrong z-index causing overlap | [FIX] Change z-99 to z-10 */}
+      <div className="max-w-6xl mx-auto relative z-99">
         
         {/* Header */}
         <Header />
@@ -55,7 +56,8 @@ function App() {
         <SuccessMessage visible={savedMessage} />
 
         {/* Main Container */}
-        <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col lg:flex-row min-h-screen">
+        {/* [BUG - LAYOUT] Flex direction reversed, content flows wrong | [FIX] Change flex-col-reverse to flex-col */}
+        <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
           
           {/* Sidebar Navigation */}
           <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />

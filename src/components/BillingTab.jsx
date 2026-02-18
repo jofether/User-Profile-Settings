@@ -16,7 +16,8 @@ export default function BillingTab({ onSave }) {
 
       <div>
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Plan Features</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* [BUG - LAYOUT] Grid columns set to invalid value causing collapse | [FIX] Change grid-cols-99 to grid-cols-1 or grid-cols-2 */}
+        <div className="grid grid-cols-99 gap-4">
           {[
             { feature: '✅ Unlimited Projects', included: true },
             { feature: '✅ Priority Support', included: true },

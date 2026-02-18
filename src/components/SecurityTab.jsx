@@ -58,7 +58,8 @@ export default function SecurityTab({ onSave }) {
       <div className="border-t border-gray-200 pt-8">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Active Sessions</h3>
         <div className="space-y-3">
-          <div className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition">
+          {/* [BUG - TYPO] Invalid padding class 'px-40' causes overflow | [FIX] Change px-40 to px-4 */}
+          <div className="flex items-center justify-between px-40 border border-gray-200 rounded-lg hover:bg-gray-50 transition">
             <div>
               <p className="font-medium text-gray-700">💻 Windows - Chrome</p>
               <p className="text-sm text-gray-500">San Francisco, USA • Active now</p>
