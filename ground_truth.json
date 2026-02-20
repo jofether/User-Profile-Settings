@@ -1,0 +1,155 @@
+{
+  "repository": "User Profile Settings",
+  "bugs": [
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 49,
+      "clean_code": "<div className=\"max-w-6xl mx-auto\">",
+      "buggy_code": "<div className=\"max-w-6xl mx-auto relative z-99\">",
+      "css_selector": "max-w-6xl",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 59,
+      "clean_code": "<div className=\"bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col lg:flex-row min-h-screen\">",
+      "buggy_code": "<div className=\"bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen\">",
+      "css_selector": "flex-col-reverse",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid",
+      "file_modified": "src/components/BillingTab.jsx",
+      "line_number": 19,
+      "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-4\">",
+      "buggy_code": "<div className=\"grid grid-cols-99 gap-4\">",
+      "css_selector": "grid-cols-99",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/GeneralTab.jsx",
+      "line_number": 8,
+      "clean_code": "<div className=\"w-24 h-24 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full flex items-center justify-center text-5xl shadow-lg\">",
+      "buggy_code": "<div className=\"w-24 h-24 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg text-white\">",
+      "css_selector": "bg-white",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/GeneralTab.jsx",
+      "line_number": 42,
+      "clean_code": "className=\"w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition\"",
+      "buggy_code": "className=\"w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition text-gray-400\"",
+      "css_selector": "text-gray-400",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "text-size",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 7,
+      "clean_code": "<h1 className=\"text-5xl font-black text-white mb-2\">Account Settings</h1>",
+      "buggy_code": "<h1 className=\"txt-5xl font-black text-white mb-2\">Account Settings</h1>",
+      "css_selector": "txt-5xl",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/NotificationsTab.jsx",
+      "line_number": 36,
+      "clean_code": "<div className=\"flex items-center justify-between bg-purple-50 p-4 rounded-lg border border-purple-200\">",
+      "buggy_code": "<div className=\"flex items-center justify-between bg-purple-50 p-4 rounded-lg border border-purple-200 absolute\">",
+      "css_selector": "absolute",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/SecurityTab.jsx",
+      "line_number": 61,
+      "clean_code": "<div className=\"flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition\">",
+      "buggy_code": "<div className=\"flex items-center justify-between px-40 border border-gray-200 rounded-lg hover:bg-gray-50 transition\">",
+      "css_selector": "px-40",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "width",
+      "file_modified": "src/components/Sidebar.jsx",
+      "line_number": 5,
+      "clean_code": "<aside className=\"w-full lg:w-72 bg-gradient-to-b from-slate-50 to-slate-100 border-r border-gray-200 p-6\">",
+      "buggy_code": "<aside className=\"w-fll lg:w-72 bg-gradient-to-b from-slate-50 to-slate-100 border-r border-gray-200 p-6\">",
+      "css_selector": "w-fll",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Sidebar.jsx",
+      "line_number": 14,
+      "clean_code": "className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-200 flex items-center space-x-3 ${",
+      "buggy_code": "className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-200 flex items-center space-x-3 -m-8 ${",
+      "css_selector": "-m-8",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
