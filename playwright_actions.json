@@ -1,0 +1,16 @@
+{
+  "actions": [
+    {
+      "name": "bug-3-OpenBillingTab",
+      "selector": "button:has-text(\"Billing\")"
+    },
+    {
+      "name": "bug-7-OpenNotificationsTab",
+      "selector": "button:has-text(\"Notifications\")"
+    },
+    {
+      "name": "bug-8-OpenSecurityTab",
+      "selector": "button:has-text(\"Security\")"
+    }
+  ]
+}
